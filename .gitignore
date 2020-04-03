@@ -1,0 +1,15 @@
+.svn/
+.vs/
+Library/
+obj/
+Temp/
+Build/PC
+Build/Andriod
+.gradle/
+*.csproj
+*.sln
+BundleExports/
+Logs/
+Tools/FFMpeg/
+Assets/UnityEngine.AssetGraph/Cache/
+Assets/Standard Assets/Best HTTP (Pro)/
