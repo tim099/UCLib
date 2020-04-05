@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/UCL_ScenesLib.unity
     guid: f6e5adf9841d79642b8265391e266141
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Test.unity
     guid: 39c20bf07f84e034aa8d607c691a538a
   - enabled: 1
