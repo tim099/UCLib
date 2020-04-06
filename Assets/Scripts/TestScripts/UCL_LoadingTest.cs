@@ -19,7 +19,7 @@ public class UCL_LoadingTest : MonoBehaviour
         timer++;
         if(timer == 20) {
             var data = UCL.SceneLib.UCL_SceneManager.Instance.LoadScene(m_LoadScene);
-            data.SetAllowSceneActivation(true);
+            data.SetAllowSceneActivation(false);
             data.StartLoad();
         }
     }
