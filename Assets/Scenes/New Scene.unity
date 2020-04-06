@@ -712,6 +712,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LoadScene: SampleScene
+  LoadScene: dddd
 --- !u!4 &1114005562
 Transform:
   m_ObjectHideFlags: 0
@@ -1069,6 +1070,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c070d29985cfb24a9501772731e3bde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  f_Show: 1
   m_MaxLogCount: 100
 --- !u!4 &1551002283
 Transform:
