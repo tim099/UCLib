@@ -712,7 +712,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LoadScene: SampleScene
-  LoadScene: dddd
+  m_EditorLoadScene: QQQ
+  m_test: 2
+  m_TestFunc: {fileID: 0}
 --- !u!4 &1114005562
 Transform:
   m_ObjectHideFlags: 0

@@ -241,6 +241,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_LoadScene: Test
+  m_EditorLoadScene: 
+  m_test: 213
+  m_TestFunc: {fileID: 0}
+  m_Test: 444
 --- !u!4 &727836791
 Transform:
   m_ObjectHideFlags: 0
