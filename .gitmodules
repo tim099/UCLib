@@ -1,9 +1,3 @@
-[submodule "Assets/Libs/UCL_Core"]
-	path = Assets/Libs/UCL_Core
-	url = https://github.com/tim099/UCL_Core
-[submodule "Assets/Libs/UCL_Modules/UCL_Scene"]
-	path = Assets/Libs/UCL_Modules/UCL_Scene
-	url = https://github.com/tim099/UCL_Scenes
-[submodule "Assets/Libs/UCL_Modules/UCL_Game"]
-	path = Assets/Libs/UCL_Modules/UCL_Game
-	url = https://github.com/tim099/UCL_Game
+[submodule "Assets/UCL"]
+	path = Assets/UCL
+	url = https://github.com/tim099/UCL
