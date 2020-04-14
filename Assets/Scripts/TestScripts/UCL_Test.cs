@@ -5,8 +5,8 @@ using UCL.Core;
 public class UCL_Test : MonoBehaviour
 {
     [UCL.Core.PA.UCL_StrListProperty("QAQ", "QWQ")] public string test;
-    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.UCL_Scene), "GetScenesName")] public string test2;
-    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.UCL_Scene), "GetAllScenesName")] public string test3;
+    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.Lib), "GetScenesName")] public string test2;
+    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.Lib), "GetAllScenesName")] public string test3;
     // Start is called before the first frame update
     void Start()
     {

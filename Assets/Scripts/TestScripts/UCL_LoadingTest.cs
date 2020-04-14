@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UCL_LoadingTest : MonoBehaviour
 {
-    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.UCL_Scene), "GetScenesName")] public string m_LoadScene;
+    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.Lib), "GetScenesName")] public string m_LoadScene;
     [UCL.Core.PA.UCL_ButtonProperty] public string m_EditorLoadScene;
     [UCL.Core.PA.UCL_ButtonProperty] public int m_test = 2;
     [UCL.Core.PA.UCL_ButtonProperty] public UCL_Test m_TestFunc;//(typeof(UCL_Test))
@@ -19,13 +19,13 @@ public class UCL_LoadingTest : MonoBehaviour
     ///*
     public void EditorLoadScene() {
         Debug.LogWarning("EditorLoadScene:" + m_LoadScene);
-        string path = UCL.SceneLib.UCL_Scene.GetScenePath(m_LoadScene);
+        string path = UCL.SceneLib.Lib.GetScenePath(m_LoadScene);
         UCL.SceneLib.EditorSceneLoader.LoadScene(path);
     }
     public void EditorLoadScene(int str) {
         Debug.LogWarning("EditorLoadScene:" + str);
         Debug.LogWarning("EditorLoadScene:" + m_LoadScene);
-        string path = UCL.SceneLib.UCL_Scene.GetScenePath(m_LoadScene);
+        string path = UCL.SceneLib.Lib.GetScenePath(m_LoadScene);
         UCL.SceneLib.EditorSceneLoader.LoadScene(path);
     }
     //*/
@@ -33,7 +33,7 @@ public class UCL_LoadingTest : MonoBehaviour
     public void EditorLoadScene(string str) {
         Debug.LogWarning("EditorLoadScene:" + str);
         Debug.LogWarning("EditorLoadScene:" + m_LoadScene);
-        string path = UCL.SceneLib.UCL_Scene.GetScenePath(m_LoadScene);
+        string path = UCL.SceneLib.Lib.GetScenePath(m_LoadScene);
         UCL.SceneLib.EditorSceneLoader.LoadScene(path);
     }
     //*/
