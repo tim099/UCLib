@@ -7,16 +7,14 @@ using UCL.Core.MarshalLib;
 public class UCL_StreamingAudioTest : MonoBehaviour
 {
     public int m_BufferLen = 4096;
-    public int m_DataSize;
+    protected int m_DataSize;
     public UCL_AudioStream m_UCL_AudioStream;
     UCL_IntPtr m_Ptr;
-    //public UCL_MicrophoneStream m_UCL_MicrophoneStream;
+
     UCL_StreamingAudioSource m_UCL_StreamingAudioSource;
     UCL_PCMConverter m_UCL_PCMConverter;
     UCL.Core.Container.UCL_ArrayPoolFixed<float> m_Pool;
-    //float[] src;
-    short[] dst;
-    short[] recieve_dst;
+
     void Start() {
         
 
@@ -36,8 +34,6 @@ public class UCL_StreamingAudioTest : MonoBehaviour
         m_Ptr = new UCL_IntPtr(sizeof(short) * m_DataSize);//sizeof(short) * 
         //m_Ptr.Alloc(m_BufferLen * 2);
         //src = new float[m_BufferLen];
-        dst = new short[m_DataSize];
-        recieve_dst = new short[m_DataSize];
         m_Pool = new UCL.Core.Container.UCL_ArrayPoolFixed<float>(m_DataSize);
         //UCL.AudioLib.Lib.PCM_FloatToShort
         /*
@@ -66,20 +62,13 @@ public class UCL_StreamingAudioTest : MonoBehaviour
             var data = m_UCL_AudioStream.Load();
             if(data != null) {
                 /*
-                UCL.AudioLib.Lib.PCM_FloatToShort(data, dst);
-                m_UCL_AudioStream.Return(data);
-                m_Ptr.ToPtr(dst);
-                m_Ptr.ToArray(recieve_dst);
-                var src = m_Pool.Rent();
-                UCL.AudioLib.Lib.PCM_ShortToFloat(recieve_dst, src);
-                //*/
                 var src = m_Pool.Rent();
                 var ptr = m_UCL_PCMConverter.ToPtr(data);
                 m_UCL_PCMConverter.ToPCM(ptr, src);
                 
                 m_UCL_StreamingAudioSource.AddData(src, m_Pool.Return);
-                
-                //m_UCL_StreamingAudioSource.AddData(data, m_UCL_AudioStream.Return);
+                */
+                m_UCL_StreamingAudioSource.AddData(data, m_UCL_AudioStream.Return);
             }
             
         }
