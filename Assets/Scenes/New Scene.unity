@@ -152,7 +152,7 @@ Transform:
   - {fileID: 1994937369}
   - {fileID: 364542940}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &239312304
 MonoBehaviour:
@@ -438,7 +438,7 @@ GameObject:
   - component: {fileID: 1114005562}
   - component: {fileID: 1114005561}
   m_Layer: 0
-  m_Name: LoadSceneTest
+  m_Name: SceneLoader
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,14 +453,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1114005560}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c9e96c327fd21946b9d13a97eae0645, type: 3}
+  m_Script: {fileID: 11500000, guid: b00f2fedf7c14384f8aaace685d13113, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LoadScene: SampleScene
-  m_EditorLoadScene: QQQ
-  m_test: 2
-  m_TestFunc: {fileID: 0}
-  m_Test: 2
+  m_SceneName: SampleScene
+  m_LoadOnStart: 1
+  m_AllowSceneActivation: 0
+  LoadScene: 0
 --- !u!4 &1114005562
 Transform:
   m_ObjectHideFlags: 0
@@ -473,7 +472,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1362076154
 GameObject:
@@ -538,7 +537,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1423536019
 GameObject:
@@ -743,7 +742,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1623367724
 GameObject:
@@ -790,7 +789,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1880068498
 GameObject:
@@ -856,7 +855,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1994937368
 GameObject:
