@@ -9,12 +9,18 @@ public class UCL_StreamingAudioTest : MonoBehaviour
     public int m_BufferLen = 4096;
     protected int m_DataSize;
     public UCL_AudioStream m_UCL_AudioStream;
+    
     UCL_IntPtr m_Ptr;
 
     UCL_StreamingAudioSource m_UCL_StreamingAudioSource;
     UCL_PCMConverter m_UCL_PCMConverter;
     UCL.Core.Container.UCL_ArrayPoolFixed<float> m_Pool;
 
+    [UCL.Core.PA.UCL_ButtonProperty("Test")] public bool m_Test;
+    public void Test() {
+        PlayerPrefs.SetString("Test", "QAQ");
+        PlayerPrefs.Save();
+    }
     void Start() {
         
 
