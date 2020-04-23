@@ -1,0 +1,4 @@
+C:\Program Files\Unity\Hub\Editor\2019.2.17f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2019.2.aa17f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2019.2.dd17f1\Editor\Unity.exe
+C:\Program Files\Unity\Hub\Editor\2019.2.ff17f1\Editor\Unity.exe
