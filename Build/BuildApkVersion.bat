@@ -1,4 +1,5 @@
-set "UnityPath=C:\Program Files\Unity\Hub\Editor\2019.2.17f1\Editor\Unity.exe"
+set /p UnityPath= <UnityInstallPath.txt
+set "BuildSetting=ApkBuildSetting"
 set "TargetPath=%cd%\"
 
 @echo off
@@ -6,7 +7,7 @@ call :GetDirParentN ProjectPath "%TargetPath%" ".."
 echo ProjectPath:            "%ProjectPath%"
 @echo on
 
-"%UnityPath%" -projectPath "%ProjectPath%" -quit -batchmode -executeMethod UCL.BuildLib.UCL_BuildSetting.BuildBySetting -output "%TargetPath%" -logFile build.log -buildsetting ApkBuildSetting
+"%UnityPath%" -projectPath "%ProjectPath%" -quit -batchmode -executeMethod UCL.BuildLib.UCL_BuildSetting.BuildBySetting -output "%TargetPath%" -logFile build.log -buildsetting "%BuildSetting%"
 
 cmd
 

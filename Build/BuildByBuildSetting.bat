@@ -1,6 +1,7 @@
 set /p UnityPath= <UnityInstallPath.txt
+set /p BuildSetting= <BuildSetting.txt
 set "TargetPath=%cd%\"
-set "BuildSetting=Win64BuildSetting"
+
 @echo off
 call :GetDirParentN ProjectPath "%TargetPath%" ".."
 echo ProjectPath:            "%ProjectPath%"
