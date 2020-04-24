@@ -15,6 +15,7 @@ MonoBehaviour:
   m_ApplySetting: 0
   m_LoadCurrentSetting: 0
   m_Build: 0
+  m_GetScenesPath: 0
   m_DefaultSetting: {fileID: 0}
   m_ProductName: UCLibWin64
   m_BuildTargetGroup: 1
@@ -23,9 +24,13 @@ MonoBehaviour:
   m_Icons:
   - {fileID: 2800000, guid: 2c6536772776dd84f872779990273bfc, type: 3}
   m_BuildAppBundle: 0
-  m_OutputPath: Build/PC/UCLWin64.exe
+  m_OutputPath: Build/PC/AOC.exe
   m_KeystoreName: 
   m_KeystorePass: 
   m_KeyaliasName: 
   m_KeyaliasPass: 
   m_ScriptingDefineSymbols: Win64
+  m_ScenesInBuild:
+  - {fileID: 102900000, guid: c5b37f35bd4658645bfd73b5a6a0a802, type: 3}
+  - {fileID: 102900000, guid: f94ea0f14bbc2a74ebedf6d4821d0fe4, type: 3}
+  - {fileID: 102900000, guid: 9708272fe45f65743841cb65b5e81625, type: 3}

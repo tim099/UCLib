@@ -17,4 +17,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/DemoGames/AOC/AOC_Scenes/AOC_Start.unity
+    guid: c5b37f35bd4658645bfd73b5a6a0a802
+  - enabled: 1
+    path: Assets/DemoGames/AOC/AOC_Scenes/AOC_MainMenu.unity
+    guid: f94ea0f14bbc2a74ebedf6d4821d0fe4
+  - enabled: 1
+    path: Assets/DemoGames/AOC/AOC_Scenes/AOC_Game.unity
+    guid: 9708272fe45f65743841cb65b5e81625
   m_configObjects: {}

@@ -4,7 +4,7 @@ Library/
 obj/
 Temp/
 Build/PC
-Build/Andriod
+Build/Apk
 .gradle/
 *.csproj
 *.sln
