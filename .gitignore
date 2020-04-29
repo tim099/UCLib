@@ -5,6 +5,7 @@ obj/
 Temp/
 Build/PC
 Build/Apk
+Build/build.log
 .gradle/
 *.csproj
 *.sln
