@@ -1163,7 +1163,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
-  m_SortingOrder: 32767
+  m_SortingOrder: 30000
   m_TargetDisplay: 0
 --- !u!1 &229677515073776733
 GameObject:
@@ -1458,6 +1458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efb7ba23bcb1aac468efb1ee33a5433d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  f_RigisterOnAwake: 1
   f_InitOnAwake: 1
   m_LoadingPanel: {fileID: 229677514509038090}
   m_LoadingCompletePanel: {fileID: 229677514717629231}
