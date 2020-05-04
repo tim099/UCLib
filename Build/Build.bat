@@ -6,8 +6,8 @@ set "TargetPath=%cd%\"
 call :GetDirParentN ProjectPath "%TargetPath%" ".."
 echo ProjectPath:            "%ProjectPath%"
 @echo on
-
-"%UnityPath%" -projectPath "%ProjectPath%" -quit -batchmode -executeMethod UCL.BuildLib.UCL_BuildSetting.BuildBySetting -output "%TargetPath%" -buildsetting "%BuildSetting%" -logFile build.log
+rem "%UnityPath%" -projectPath "%ProjectPath%" -quit -batchmode -executeMethod UCL.BuildLib.UCL_BuildSetting.BuildBySetting -output "%TargetPath%Batch\" -buildsetting "%BuildSetting%" -logFile build.log
+"%UnityPath%" -projectPath "%ProjectPath%" -quit -batchmode -executeMethod UCL.BuildLib.UCL_BuildSetting.BuildBySetting -buildsetting "%BuildSetting%" -logFile build.log
 cmd
 
 
