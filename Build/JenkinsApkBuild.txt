@@ -1,0 +1,1 @@
+-projectPath "D:\UnityProjects\UCLib" -logFile "$WORKSPACE/unity3d.log" -quit -batchmode -nographics -executeMethod UCL.BuildLib.UCL_BuildSetting.BuildBySetting -output "$WORKSPACE/" -buildsetting ApkBuildSetting
