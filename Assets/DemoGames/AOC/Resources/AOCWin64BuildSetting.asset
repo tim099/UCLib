@@ -15,18 +15,19 @@ MonoBehaviour:
   m_ApplySetting: 0
   m_LoadCurrentSetting: 0
   m_Build: 0
-  m_GetScenesPath: 0
   m_DefaultSetting: {fileID: 11400000, guid: 70c9a9b7bcb1ec3428363af8841432d2, type: 2}
   m_ProductName: UCLibWin64
+  m_ApplicationIdentifier: 
   m_BuildTargetGroup: 1
   m_BuildTarget: 19
   m_BuildOption: 0
   m_Icons: []
   m_BuildAppBundle: 0
-  m_OutputPath: Build/PC/AOCWin64.exe
+  m_OutputPath: Build/PC/
+  m_OutputName: AOCWin64.exe
+  m_ScenesInBuild: []
   m_KeystoreName: 
   m_KeystorePass: 
   m_KeyaliasName: 
   m_KeyaliasPass: 
   m_ScriptingDefineSymbols: Win64
-  m_ScenesInBuild: []
