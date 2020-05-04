@@ -1,3 +1,3 @@
 set /p UnityPath= <UnityInstallPath.txt
-set "TargetPath=%cd%\"
+set "BuildSetting=Win64BuildSetting"
 call Build.bat "%UnityPath%" "%BuildSetting%"
