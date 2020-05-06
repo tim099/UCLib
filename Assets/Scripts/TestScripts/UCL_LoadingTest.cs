@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class UCL_LoadingTest : MonoBehaviour
 {
-    [UCL.Core.PA.UCL_StrListProperty(typeof(UCL.SceneLib.Lib), "GetScenesName")] public string m_LoadScene;
-    [UCL.Core.PA.UCL_ButtonProperty] public string m_EditorLoadScene;
-    [UCL.Core.PA.UCL_ButtonProperty] public int m_test = 2;
-    [UCL.Core.PA.UCL_ButtonProperty] public UCL_Test m_TestFunc;//(typeof(UCL_Test))
-    [UCL.Core.PA.UCL_ButtonProperty(typeof(UCL_Test), m_FuncName = "TestFunc")] public int m_Test = 2;
+    [UCL.Core.PA.UCL_StrList(typeof(UCL.SceneLib.Lib), "GetScenesName")] public string m_LoadScene;
+    [UCL.Core.PA.UCL_Button] public string m_EditorLoadScene;
+    [UCL.Core.PA.UCL_Button] public int m_test = 2;
+    [UCL.Core.PA.UCL_Button] public UCL_Test m_TestFunc;//(typeof(UCL_Test))
+    [UCL.Core.PA.UCL_Button(typeof(UCL_Test), m_FuncName = "TestFunc")] public int m_Test = 2;
     int timer = 0;
     // Start is called before the first frame update
     void Start()

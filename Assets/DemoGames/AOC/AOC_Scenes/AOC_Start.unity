@@ -256,12 +256,63 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 155976426}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &229052619
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229052621}
+  - component: {fileID: 229052620}
+  m_Layer: 0
+  m_Name: UCL_DebugLog
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &229052620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229052619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c070d29985cfb24a9501772731e3bde, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Scale: 0
+  m_LogLevel: 31
+  f_Show: 1
+  f_DrawShowDebugLogButton: 0
+  f_LogToFile: 0
+  f_AutoStackTrace: 1
+  m_MaxLogCount: 100
+  m_ShowKeyCode: 115
+--- !u!4 &229052621
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229052619}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 583.1573, y: 85.44327, z: -6608.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1056328450
 GameObject:
@@ -279,7 +330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &1056328451
 Light:
   m_ObjectHideFlags: 0
@@ -352,7 +403,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1620903287
 GameObject:
@@ -438,7 +489,7 @@ GameObject:
   - component: {fileID: 1714321476}
   - component: {fileID: 1714321475}
   m_Layer: 0
-  m_Name: GM
+  m_Name: AOC_GM
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -453,13 +504,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1714321474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 136d3c46a001e9548b7b61d14ea82612, type: 3}
+  m_Script: {fileID: 11500000, guid: be4e8c7f42faeb8429038b94bb45b9d8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_ExitGameEvent:
     m_PersistentCalls:
       m_Calls: []
   m_ExitGameMaxWaitFrame: 1000
+  m_GameName: AOC
 --- !u!4 &1714321476
 Transform:
   m_ObjectHideFlags: 0
@@ -472,7 +524,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1723021726
 GameObject:
@@ -590,7 +642,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1839556495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -619,7 +671,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2101845314
 GameObject:
@@ -802,7 +854,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1714321475}
         m_MethodName: ExitGame
         m_Mode: 1
         m_Arguments:
@@ -993,7 +1045,7 @@ Transform:
   m_Children:
   - {fileID: 8858929914017341489}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &8858929912476104595
 MonoBehaviour:

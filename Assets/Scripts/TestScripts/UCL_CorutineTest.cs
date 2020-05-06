@@ -3,29 +3,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UCL.Core.JsonLib;
+
 public class UCL_CorutineTest : MonoBehaviour
 {
+    /*
     [Serializable]
     struct test {
         public int m_T;
         public string m_S;
         public float m_F;
     }
+    */
     // Start is called before the first frame update
     void Start()
     {
-        int a = 1;
-        int b = 2;
-        object ta = a;
-        object tb = 1;
-        object tc = b;
-        Debug.LogError("TT:" + ta.Equals(tb));
-        /*
-        var t = new test();
-        t.m_F = 123.2221f;
-        t.m_S = "Taease";
-        t.m_F = 313232;
-        */
         JsonData t = new JsonData();
         long ll = long.MaxValue;
         t["m_T"] = 123.2221f;
@@ -35,7 +26,7 @@ public class UCL_CorutineTest : MonoBehaviour
         t["L"] = ll;
         string str = t.ToJson();//LitMiniJson.JsonMapper.Serialize(t);
         Debug.LogWarning("Json:" + str);
-        var data = JsonParser.ToJsonData(str);
+        var data = JsonData.ParseJson(str);
         t["Arr"] = data;
         data["WWW"] = "Abigail!!!";
         //Debug.LogError("m_T:" + data["m_T"].ToString());
@@ -53,7 +44,6 @@ public class UCL_CorutineTest : MonoBehaviour
         arr2.Add(da);
         for(int i = 0; i < 10; i++) {
             arr.Add(2 * i);
-            
         }
         {
             var va = data["arr"];
@@ -64,12 +54,13 @@ public class UCL_CorutineTest : MonoBehaviour
         }
         Debug.LogWarning("vv:" + vv);
 
-        double vv2 = (double)data["m_T"];
+        double vv2 = data.Get("m_T");//.GetDouble();//(double)data["m_T"];
         Debug.LogWarning("vv2:" + vv2);
-        Debug.LogWarning("vv2:" + data["WWW"]);
-        Debug.LogError("Json:" + t.ToJson());
-        
-
+        Debug.LogWarning("WWW:" + data.Get("WWW"));
+        var json = t.ToJson();
+        Debug.LogWarning("Json:" + json);
+        var jsondata = JsonData.ParseJson(json);
+        Debug.LogWarning("test:" + jsondata.ToJson());
         //StartCoroutine(Test());
         //Application.SetStackTraceLogType
         //Application.SetStackTraceLogType(LogType.Log, StackTraceLogType.ScriptOnly);

@@ -16,7 +16,7 @@ public class UCL_StreamingAudioTest : MonoBehaviour
     UCL_PCMConverter m_UCL_PCMConverter;
     UCL.Core.Container.UCL_ArrayPoolFixed<float> m_Pool;
 
-    [UCL.Core.PA.UCL_ButtonProperty("Test")] public bool m_Test;
+    [UCL.Core.PA.UCL_Button("Test")] public bool m_Test;
     public void Test() {
         PlayerPrefs.SetString("Test", "QAQ");
         PlayerPrefs.Save();
