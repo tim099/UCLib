@@ -2,3 +2,7 @@
 	path = Assets/UCL
 	url = https://github.com/tim099/UCL
 	branch = Dev
+[submodule "Assets/DemoGames/AgeOfCube"]
+	path = Assets/DemoGames/AgeOfCube
+	url = https://github.com/tim099/AOC
+	branch = Dev
