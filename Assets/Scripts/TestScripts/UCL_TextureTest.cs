@@ -9,7 +9,7 @@ public class UCL_TextureTest : MonoBehaviour
 {
     [SerializeField] Texture2D m_IsPlaying;
     [SerializeField] Image m_Img;
-    [SerializeField] UCL_AudioSourceDebugGUI m_AudioSourceDebugGUI;
+    [SerializeField] UCL_AudioDebugGUI m_AudioDebugGUI;
     UCL.Core.TextureLib.UCL_Texture2D m_PlayTexture;
     private void Awake() {
 
@@ -21,19 +21,7 @@ public class UCL_TextureTest : MonoBehaviour
     }
     [UCL.Core.ATTR.UCL_FunctionButton]
     public void Refresh() {
-        /*
-        m_PlayTexture = new UCL.Core.TextureLib.UCL_Texture2D(new Vector2Int(64, 64));
-        for(int i = 0; i < m_PlayTexture.height; i++) {
-            for(int j = 0; j < m_PlayTexture.width; j++) {
-                m_PlayTexture.SetPixel(i, j, Color.Lerp(Color.blue, Color.yellow,(0.5f*i+0.5f*j)/ m_PlayTexture.height));
-            }
-        }
-        for(int i = 0; i < m_PlayTexture.height; i++) {
-            m_PlayTexture.SetPixel(32, i, Color.red);
-            m_PlayTexture.SetPixel(i, 32, Color.green);
-        }
-        */
-        m_PlayTexture = m_AudioSourceDebugGUI.m_PlayTexture;
+        m_PlayTexture = m_AudioDebugGUI.m_Texture;
 
         m_IsPlaying = m_PlayTexture.texture;//Instantiate(m_PlayTexture.texture);
         if(m_Img) m_Img.sprite = m_PlayTexture.sprite;//m_PlayTexture.sprite;
