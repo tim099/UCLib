@@ -10,6 +10,7 @@ public class UCL_TextureTest : MonoBehaviour
     [SerializeField] Texture2D m_IsPlaying;
     [SerializeField] Image m_Img;
     [SerializeField] UCL_AudioDebugGUI m_AudioDebugGUI;
+    [UCL.Core.PA.UCL_StrList(new string[] { "Hi","Hey"})] public string test;
     UCL.Core.TextureLib.UCL_Texture2D m_PlayTexture;
     private void Awake() {
 
@@ -21,8 +22,9 @@ public class UCL_TextureTest : MonoBehaviour
     }
     [UCL.Core.ATTR.UCL_FunctionButton]
     public void Refresh() {
+        if(m_AudioDebugGUI == null) return;
         m_PlayTexture = m_AudioDebugGUI.m_Texture;
-
+        if(m_PlayTexture == null) return;
         m_IsPlaying = m_PlayTexture.texture;//Instantiate(m_PlayTexture.texture);
         if(m_Img) m_Img.sprite = m_PlayTexture.sprite;//m_PlayTexture.sprite;
         GetComponent<MeshRenderer>().material.mainTexture = m_PlayTexture.texture;//m_PlayTexture.texture;
