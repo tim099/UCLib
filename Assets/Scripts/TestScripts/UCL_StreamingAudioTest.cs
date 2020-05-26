@@ -63,7 +63,7 @@ public class UCL_StreamingAudioTest : MonoBehaviour
     public bool m_Pause = false;
     void Update() {
         if(m_Pause) return;
-        if(m_UCL_StreamingAudioSource.GetDataCount() < 2) {
+        if(m_UCL_StreamingAudioSource.CanAddData()) {
             //m_UCL_StreamingAudioSource.AddData(m_UCL_AudioClipStream.Load(m_BufferLen));
             var data = m_UCL_AudioStream.Load();
             if(data != null) {
