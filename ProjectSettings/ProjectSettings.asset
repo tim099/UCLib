@@ -831,7 +831,7 @@ PlayerSettings:
   webGLThreadsSupport: 0
   webGLWasmStreaming: 0
   scriptingDefineSymbols:
-    1: Win64
+    1: Win64;AMPLIFY_SHADER_EDITOR
     7: 
   platformArchitecture: {}
   scriptingBackend: {}
