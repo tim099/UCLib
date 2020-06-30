@@ -7,9 +7,11 @@ using UnityEngine.UI;
 [UCL.Core.ATTR.EnableUCLEditor]
 public class UCL_TextureTest : MonoBehaviour
 {
+#pragma warning disable 0649
     [SerializeField] Texture2D m_IsPlaying;
     [SerializeField] Image m_Img;
     [SerializeField] UCL_AudioDebugGUI m_AudioDebugGUI;
+#pragma warning restore 0649
     [UCL.Core.PA.UCL_StrList(new string[] { "Hi","Hey"})] public string test;
     UCL.Core.TextureLib.UCL_Texture2D m_PlayTexture;
     private void Awake() {
@@ -30,7 +32,7 @@ public class UCL_TextureTest : MonoBehaviour
         GetComponent<MeshRenderer>().material.mainTexture = m_PlayTexture.texture;//m_PlayTexture.texture;
     }
     // Update is called once per frame
-    float time = 0;
+    //float time = 0;
     void Update()
     {
         if(m_PlayTexture == null) {
