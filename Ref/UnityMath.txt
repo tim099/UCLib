@@ -1,0 +1,2 @@
+Struct float3x3   
+	https://docs.unity3d.com/Packages/com.unity.mathematics@0.0/api/Unity.Mathematics.float3x3.html

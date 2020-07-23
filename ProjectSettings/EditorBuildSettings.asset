@@ -14,4 +14,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/DemoGames/AgeOfCube/AOC_Scenes/AOC_Game.unity
     guid: 9708272fe45f65743841cb65b5e81625
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.addressableassets: {fileID: 11400000, guid: 26de675d24fb114449c67b4ac905e2d9,
+      type: 2}
