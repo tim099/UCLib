@@ -1,0 +1,1 @@
+Attribute (delegate-as-attribute-parameter) https://stackoverflow.com/questions/7705386/is-it-possible-to-have-a-delegate-as-attribute-parameter

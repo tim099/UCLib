@@ -1,0 +1,9 @@
+Shift+F12 (尋找所有參考)
+Alt+Up or Down(移動 Enum)
+F12 (移到定義)
+
+https://milktealiny.pixnet.net/blog/post/63316539-%5B%E5%BF%AB%E9%80%9F%5Dvisual-studio-%E5%BF%AB%E6%8D%B7%E9%8D%B5%E5%88%97%E8%A1%A8
+CTRL + K T(檢視呼叫階層)
+
+CTRL + K C 註解選定內容
+CTRL + K U 取消註解選定內容
