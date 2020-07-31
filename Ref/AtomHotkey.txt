@@ -1,0 +1,1 @@
+atom-beautify CTRL + ALT + B
