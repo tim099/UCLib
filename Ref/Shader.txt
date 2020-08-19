@@ -1,2 +1,5 @@
 Camera’s Depth Texture 
 	https://docs.unity3d.com/Manual/SL-CameraDepthTexture.html
+
+Shader data types and precision
+	https://docs.unity3d.com/Manual/SL-DataTypesAndPrecision.html
