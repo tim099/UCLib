@@ -7,3 +7,8 @@ CTRL + K T(檢視呼叫階層)
 
 CTRL + K C 註解選定內容
 CTRL + K U 取消註解選定內容
+
+To convert text to all upper case, choose Edit > Advanced > Make Uppercase or press Ctrl+Shift+U.
+To convert text to all lower case, choose Edit > Advanced > Make Lowercase or press Ctrl+U. 
+
+https://docs.microsoft.com/zh-tw/visualstudio/ide/how-to-change-text-case-in-the-editor?view=vs-2019
