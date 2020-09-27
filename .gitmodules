@@ -6,3 +6,7 @@
 	path = Assets/DemoGames/AgeOfCube
 	url = https://github.com/tim099/AOC
 	branch = Dev
+[submodule "Assets/DemoGames/CardGame"]
+	path = Assets/DemoGames/CardGame
+	url = https://github.com/tim099/CardGame
+	branch = Dev
