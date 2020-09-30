@@ -2,4 +2,4 @@ git fetch origin Dev
 git checkout Dev
 git pull origin Dev
 
-call A_SubmoduleUpdate.bat
+call 3_SubmoduleUpdate.bat
