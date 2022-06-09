@@ -27,9 +27,9 @@ public class UCL_TextureTest : MonoBehaviour
         if(m_AudioDebugGUI == null) return;
         m_PlayTexture = m_AudioDebugGUI.m_Texture;
         if(m_PlayTexture == null) return;
-        m_IsPlaying = m_PlayTexture.texture;//Instantiate(m_PlayTexture.texture);
+        m_IsPlaying = m_PlayTexture.GetTexture();//Instantiate(m_PlayTexture.texture);
         if(m_Img) m_Img.sprite = m_PlayTexture.sprite;//m_PlayTexture.sprite;
-        GetComponent<MeshRenderer>().material.mainTexture = m_PlayTexture.texture;//m_PlayTexture.texture;
+        GetComponent<MeshRenderer>().material.mainTexture = m_PlayTexture.GetTexture();//m_PlayTexture.texture;
     }
     // Update is called once per frame
     //float time = 0;
